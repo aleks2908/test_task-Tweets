@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
-
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   line-height: 1.5;
   background-color: #ebe4fa;
 }
