@@ -1,12 +1,8 @@
-import "modern-normalize";
-import { Routes, Route } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
-import Home from "../pages/Home/Home";
-import Tweets from "../pages/Tweets/Tweets";
-
-
-// const Home = lazy(() => import("pages/Home"));
-// const Tweets = lazy(() => import("pages/Tweets"));
+import 'modern-normalize';
+import { Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import Home from '../pages/Home/Home';
+import Tweets from '../pages/Tweets/Tweets';
 
 export default function App() {
   return (
@@ -20,4 +16,3 @@ export default function App() {
     </>
   );
 }
-

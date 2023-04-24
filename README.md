@@ -1,113 +1,131 @@
-# React homework template
+# react-modal
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+# NOTE
 
-## Создание репозитория по шаблону
+Need feedback to push a new version of `react-modal` forward. See issue [#881](https://github.com/reactjs/react-modal/issues/881). 
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+Accessible modal dialog component for React.JS
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+[![Build Status](https://api.travis-ci.org/reactjs/react-modal.svg)](https://travis-ci.org/reactjs/react-modal)
+[![Coverage Status](https://coveralls.io/repos/github/reactjs/react-modal/badge.svg?branch=master)](https://coveralls.io/github/reactjs/react-modal?branch=master)
+![gzip size](http://img.badgesize.io/https://unpkg.com/react-modal/dist/react-modal.min.js?compression=gzip)
+[![Join the chat at https://gitter.im/react-modal/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/react-modal/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+## Table of Contents
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+* [Installation](#installation)
+* [API documentation](#api-documentation)
+* [Examples](#examples)
+* [Demos](#demos)
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+## Installation
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+To install, you can use [npm](https://npmjs.org/) or [yarn](https://yarnpkg.com):
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
+    $ npm install --save react-modal
+    $ yarn add react-modal
+    
+To install react-modal in React CDN app:
 
-## Подготовка к работе
+   - Add this CDN script tag after React CDN scripts and before your JS files (for example from [cdnjs](https://cdnjs.com/)): 
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react-modal/3.14.3/react-modal.min.js"
+            integrity="sha512-MY2jfK3DBnVzdS2V8MXo5lRtr0mNRroUI9hoLVv2/yL3vrJTam3VzASuKQ96fLEpyYIT4a8o7YgtUs5lPjiLVQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
 
-## Деплой
+   - Use `<ReactModal>` tag inside your React CDN app.
 
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
-```
+## API documentation
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+The primary documentation for react-modal is the
+[reference book](https://reactjs.github.io/react-modal), which describes the API
+and gives examples of its usage.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+## Examples
 
-### Статус деплоя
-
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
-
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
+Here is a simple example of react-modal being used in an app with some custom
+styles and focusable input elements within the modal content:
 
 ```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
+
+// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
+Modal.setAppElement('#yourAppElement');
+
+function App() {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  return (
+    <div>
+      <button onClick={openModal}>Open Modal</button>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
+        </form>
+      </Modal>
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, appElement);
 ```
 
-## Как это работает
+You can find more examples in the `examples` directory, which you can run in a
+local development server using `npm start` or `yarn run start`.
 
-![How it works](./assets/how-it-works.png)
+## Demos
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+There are several demos hosted on [CodePen](https://codepen.io) which
+demonstrate various features of react-modal:
+
+* [Minimal example](https://codepen.io/claydiffrient/pen/KNxgav)
+* [Using setAppElement](https://codepen.io/claydiffrient/pen/ENegGJ)
+* [Using onRequestClose](https://codepen.io/claydiffrient/pen/KNjVBx)
+* [Using shouldCloseOnOverlayClick](https://codepen.io/claydiffrient/pen/woLzwo)
+* [Using inline styles](https://codepen.io/claydiffrient/pen/ZBmyKz)
+* [Using CSS classes for styling](https://codepen.io/claydiffrient/pen/KNjVrG)
+* [Customizing the default styles](https://codepen.io/claydiffrient/pen/pNXgqQ)
