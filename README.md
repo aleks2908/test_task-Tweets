@@ -2,10 +2,6 @@
 
 > get statistics from array of tweet-cards
 
-## Install
-
-    npm install --save tweets
-
 ## Description and Usage
 
 The application consists of two pages:
