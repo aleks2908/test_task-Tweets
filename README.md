@@ -26,4 +26,4 @@ that you have subscribed to.
 
 ## License
 
-MIT © [Oleksandr Druzhynin](https://aleks2908.github.io/test_task-Tweets/)
+MIT © [Oleksandr Druzhynin](https://github.com/aleks2908/test_task-Tweets)
