@@ -1,7 +1,7 @@
 .cardList {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 0 50px 50px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -26,11 +26,11 @@
 }
 
 .spiner {
-  margin-top: 14px;
-  position: absolute;
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
 }
 
 .className {

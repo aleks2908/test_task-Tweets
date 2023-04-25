@@ -93,15 +93,14 @@ export const CardList = () => {
         className={css.className}
         controlClassName={css.controlClassName}
         menuClassName={css.menuClassName}
-
         options={options}
         onChange={handleDropdown}
         value={showUsers}
         placeholder="Show Tweets"
       />
 
-      {isLoading && (
-        <div className={css.spiner}>
+      <div className={css.spiner}>
+        {isLoading && (
           <ThreeDots
             height="25"
             width="116"
@@ -109,12 +108,12 @@ export const CardList = () => {
             ariaLabel="three-dots-loading"
             visible={true}
           />
-        </div>
-      )}
+        )}
+      </div>
 
       <ul className={css.cardList}>
         {filteredUsers.length > 0 &&
-          filteredUsers.slice(0, page * 4).map((user) => (
+          filteredUsers.slice(0, page * 4).map(user => (
             <li key={user.id}>
               <Card user={user} onCardChange={onCardChange} />
             </li>
