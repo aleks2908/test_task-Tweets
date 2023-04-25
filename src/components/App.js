@@ -1,4 +1,3 @@
-import 'modern-normalize';
 import { Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import Home from '../pages/Home/Home';
