@@ -17,7 +17,7 @@ export const Card = ({ user, onCardChange }) => {
       <button
         className={`${css.button} ${css[active]}`}
         type="button"
-        onClick={() => onCardChange(id, followers, active)}
+        onClick={() => onCardChange(id)}
       >
         {active === 'active' ? 'Following' : 'Follow'}
       </button>
