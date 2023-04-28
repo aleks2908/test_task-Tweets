@@ -23,7 +23,7 @@ export const CardList = () => {
         const response = await axios.get('/tweetUsers');
 
         let activeUsersIdArray =
-          JSON.parse(localStorage.getItem('activeUsers')) ?? [];
+          JSON.parse(localStorage.getItem('activeUsersIdArray')) ?? [];
         const usersChacked = response.data?.map(user => {
           if (activeUsersIdArray.includes(user.id)) {
             return { ...user, followers: user.followers + 1, active: 'active' };
